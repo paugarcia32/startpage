@@ -278,6 +278,9 @@ img{
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
 
     border-radius: 10px;
+
+
+    
     
 }
 
@@ -297,7 +300,9 @@ ul {
     
     text-align: center;
     overflow:hidden; 
-    /*overflow-y:scroll;*/
+    overflow-y:scroll;
+    scrollbar-width: none;
+    
   }
   li{
     
@@ -315,12 +320,18 @@ ul {
   
 
 #tab-1{
+  
+  
+  /*
   border-width: 1px;
   border-style: solid;
-  /*border-color: var(--rojo);
-  background-color: var(--bgrojo);*/
+  border-color: var(--rojo);
+  background-color: var(--bgrojo);
   background-color: rgba(30, 48, 64, 0.25);
   max-width: 100%;
+  */
+  
+  
 }
 
 #tab-1:hover{
@@ -519,18 +530,25 @@ ul.departments-6 a{ text-decoration: none; color: #FFFFFF;}
     .tabs{
         margin-top: 200px;
         display: flex;
-        /*background-color: var(--turboOrange);*/
+        
         height: 1000px;
         
     }
     .data-tab{
         flex: 30%;
-        height: 350px;
+        height: 500px;
+        overflow:hidden;
+        /*background-color: blue;*/
+        
+        
     }
     .A , .B{
         width: 80%;
-        height: 400px;
-        
+        height: 550px;
+         
+    }
+    #tab-1,#tab-2,#tab-3,#tab-4,#tab-5,#tab-6 {
+      height: 450px;
     }
 
     ul {
@@ -540,9 +558,10 @@ ul.departments-6 a{ text-decoration: none; color: #FFFFFF;}
         /*width: 100%;*/
         
         text-align: center;
-        overflow:hidden; 
+         overflow:hidden; 
         overflow-y:scroll;
-        scrollbar-width: thin;
+        scrollbar-width: none;
+         
       }
       i{
         margin-left: 20%;
@@ -554,20 +573,15 @@ ul.departments-6 a{ text-decoration: none; color: #FFFFFF;}
 
 /*---------------HALF-SCREEN------------------*/
 @media screen and (max-width: 960px){
-    .time{
-        margin-top: 0%;
-        height: 15px;
-        font-size: small;
-    }
-    .wheather{
-        margin-top: 2%;
+    .header{
+      top: auto;
     }
     .search{
         margin-top: 5%;
     }
 
     .tabs{
-        margin-top: 10%;
+        margin-top: 10px;
         /*background-color: #045757;*/
         display: flex;
         justify-content: center;
@@ -576,12 +590,26 @@ ul.departments-6 a{ text-decoration: none; color: #FFFFFF;}
     }
     .data-tab{
         flex: 30%;
-        height: 250px;
+        height: 100px;
+        overflow:hidden;
+        
     }
     .A , .B{
         width: 80%;
-        height: 250px;
         
+        height: 320px;
+        /*background-color: #045757;*/
+        
+        
+        
+    }
+
+    ul {
+      text-align: center;
+    overflow:hidden; 
+    overflow-y:scroll;
+    scrollbar-width: none;
+    
     }
 }
 
@@ -599,15 +627,78 @@ ul.departments-6 a{ text-decoration: none; color: #FFFFFF;}
         width: 60%;
         
         text-align: center;
-        overflow:hidden; overflow-y:scroll;
+    overflow:hidden; 
+    overflow-y:scroll;
+    scrollbar-width: none;
       }
 
       .data-tab{
         height: 300px;
+        overflow:hidden;
       }
 
 }
 
+
+
+/*-------------SMALL WINDOWS----------------*/
+@media screen and (max-width: 800px){
+    
+
+  .header{
+      margin-top: none;
+  }
+  .img{
+      margin-top: 10px;
+
+      height: 120px;
+      width: 120px;
+
+  }
+  .search{
+      margin-top: 20px;
+      height: 20px;
+  }
+
+  .tabs{
+      margin-top: 5px;
+      display: flex;
+      /*background-color: var(--turboOrange);*/
+      height: 450px;
+      
+  }
+  .data-tab{
+      flex: 30%;
+      height: 300px;
+      overflow:hidden;
+  }
+  .A , .B{
+      width: 80%;
+      height: 300px;
+      /*background-color: #0000FF;*/
+      margin-top: 5px;
+      
+  }
+
+  ul {
+      
+      
+      margin-left: 0%;
+      /*width: 100%;*/
+      
+      text-align: center;
+       overflow:hidden; 
+      overflow-y:scroll;
+      scrollbar-width: none;
+       
+    }
+    i{
+      margin-left: 20%;
+    }
+
+    
+
+}
 
 
 
