@@ -5,6 +5,8 @@
 
     --sec: #1E3040;
 
+    --scrollbar: rgba(30, 48, 64, 0.25);;
+
 
 
 
@@ -44,7 +46,7 @@ text{
 }
 
 
-  .header{
+.header{
     display: flex;
 
     display: flex;
@@ -294,7 +296,8 @@ ul {
     width: 70%;
     
     text-align: center;
-    overflow:hidden; overflow-y:scroll;
+    overflow:hidden; 
+    /*overflow-y:scroll;*/
   }
   li{
     
@@ -537,7 +540,9 @@ ul.departments-6 a{ text-decoration: none; color: #FFFFFF;}
         /*width: 100%;*/
         
         text-align: center;
-        overflow:hidden; overflow-y:scroll;
+        overflow:hidden; 
+        overflow-y:scroll;
+        scrollbar-width: thin;
       }
       i{
         margin-left: 20%;
