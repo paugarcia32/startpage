@@ -694,7 +694,7 @@ ul.departments-6 a{ text-decoration: none; color: #FFFFFF;}
 
   #tab-1,#tab-2,#tab-3,#tab-4,#tab-5,#tab-6 {
     height: 150px;
-    background-color: #0000FF;
+    /*background-color: #0000FF;*/
   }
 
   ul {
